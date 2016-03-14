@@ -134,10 +134,7 @@
 	      return _react2.default.createElement(
 	        'div',
 	        null,
-	        _react2.default.createElement(_searchBar2.default, {
-	          className: 'search-bar',
-	          onSearchTermChange: videoSearch
-	        }),
+	        _react2.default.createElement(_searchBar2.default, { onSearchTermChange: videoSearch }),
 	        _react2.default.createElement(_videoDetail2.default, { video: this.state.selectedVideo }),
 	        _react2.default.createElement(_videoList2.default, {
 	          onVideoSelect: function onVideoSelect(selectedVideo) {
@@ -33113,7 +33110,7 @@
 
 	      return _react2.default.createElement(
 	        'div',
-	        null,
+	        { className: 'search-bar' },
 	        _react2.default.createElement('input', {
 	          value: this.state.term,
 	          onChange: function onChange(event) {
